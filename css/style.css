@@ -1,0 +1,267 @@
+:root {
+    --main-color: #ff206e;
+}
+
+.home {
+    background-image: url(../images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    overflow: auto;
+}
+
+.homeContent {
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.homeContent h2 {
+    font-weight: 200;
+
+}
+
+.icons a {
+    color: #fff;
+
+}
+
+.myIcon {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.portifolio a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 200;
+}
+
+.myAbout {
+    background-image: url(../images/light_dot.jpg);
+}
+
+.rightContent h2,
+.rightContent h3 {
+    font-weight: 100;
+}
+
+.rightContent h3 {
+    color: var(--main-color);
+}
+
+.myAbout p {
+    font-weight: lighter;
+}
+
+.allTitle h2 {
+    /* background-color: tomato; */
+    font-size: 80px;
+    color: #f1f1f1;
+    font-weight: 400;
+
+}
+
+.allTitle h3 {
+    /* background-color: blue; */
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.fixedTitle {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anchorIcon {
+    width: 50px;
+    height: 50px;
+    border: 1px #FFFFFF solid;
+    background-color: #212529;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 10%;
+
+}
+
+.anchorIcon i {
+    color: #fff;
+}
+
+.branding {
+    font-weight: 300;
+}
+
+.branding::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25%;
+    height: 2px;
+    background-color: var(--main-color);
+    z-index: 9999;
+}
+
+.SERVICESCOLOR {
+    color: #222222 !important;
+}
+
+.profImg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.profImg img {
+    border-radius: 50%;
+
+
+}
+
+.carouselHeader {
+    font-weight: 200;
+}
+
+.carousel {
+    padding: 20px;
+}
+
+.carouselContainer {
+    width: 75%;
+    border: gray 1px solid;
+    padding: 25px;
+}
+
+.carouselSlider {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+
+.sideBar {
+    background-color: #CCCCCC;
+    position: fixed;
+    left: -277.55px;
+    top: 20%;
+    padding: 5px;
+
+}
+
+
+
+.colorChanger {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+
+
+.fa-cog {
+    color: #fff;
+    background-color: #222222;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+}
+
+.containColors h2 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.arrowIcon {
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #ff206e;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    border: none;
+}
+
+.loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999999;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
